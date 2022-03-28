@@ -5,12 +5,12 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-import * as Vue from 'vue'
-import App from '../app.vue'
+import Vue from "vue/dist/vue.esm.js";
+import IndexComponent from "../components/IndexComponent.vue";
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
-    render: h => h(App)
+    render: h => h(IndexComponent)
   }).$mount()
   document.body.appendChild(app.$el)
 

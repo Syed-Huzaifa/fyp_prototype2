@@ -1,12 +1,12 @@
-import * as Vue from "vue";
-import App from "../components/app.vue";
+import Vue from "vue/dist/vue.esm.js";
+import IndexComponent from "../components/IndexComponent.vue";
 
 document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(document.createElement("app"));
   const app = new Vue({
     el: "app",
-    template: "<App/>",
-    components: { App },
+    template: "<IndexComponent/>",
+    components: { IndexComponent },
   });
 
   console.log(app);
