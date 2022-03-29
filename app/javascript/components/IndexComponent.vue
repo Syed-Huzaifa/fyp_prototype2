@@ -1,25 +1,17 @@
 <template>
   <div id='app'>
-    <p>{{ message }}</p>
+    <h1>Digital Hall Road</h1>
   </div>
 </template>
 
 <script>
   export default {
     data: function () {
-      return {
-        message: "Welcome to Cinematronix!"
-      }
-    },
-    mounted (){
-      console.log('-=-=-=-=-==-=-');
+      return {}
     }
   }
 </script>
 
 <style scoped>
-  p {
-    font-size: 2em;
-    text-align: center;
-  }
+  
 </style>

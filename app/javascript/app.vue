@@ -1,22 +1,24 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <index-component />
   </div>
 </template>
 
 <script>
+import IndexComponent from './components/IndexComponent.vue'
+
 export default {
   data: function () {
-    return {
-      message: "Hello Vue!"
-    }
+    return {}
+  },
+  components: {
+    IndexComponent
   }
 }
 </script>
 
 <style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
+#app {
+    text-align: center;
+  }
 </style>
