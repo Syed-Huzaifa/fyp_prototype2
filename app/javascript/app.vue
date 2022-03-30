@@ -1,21 +1,8 @@
 <template>
   <div id="app">
-    <index-component />
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import IndexComponent from './components/IndexComponent.vue'
-
-export default {
-  data: function () {
-    return {}
-  },
-  components: {
-    IndexComponent
-  }
-}
-</script>
 
 <style scoped>
 #app {
